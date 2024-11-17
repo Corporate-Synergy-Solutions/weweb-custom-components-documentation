@@ -1,13 +1,28 @@
 {
-    "private": true,
-    "type": "module",
-    "scripts": {
-      "docs:dev": "vitepress dev docs",
-      "docs:build": "vitepress build docs",
-      "docs:preview": "vitepress preview docs"
-    },
-    "devDependencies": {
-      "vitepress": "latest"
-    }
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
+  },
+  "devDependencies": {
+    "vitepress": "latest"
+  },
+  "dependencies": {
+    "@mdi/font": "^7.4.47",
+    "@schedule-x/calendar-controls": "^2.0.0",
+    "@schedule-x/drag-and-drop": "^2.0.0",
+    "@schedule-x/event-modal": "^2.0.0",
+    "@schedule-x/event-recurrence": "^2.0.0",
+    "@schedule-x/events-service": "^2.5.0",
+    "@schedule-x/scroll-controller": "^2.0.0",
+    "@schedule-x/theme-default": "^2.0.0",
+    "@schedule-x/vue": "2.0.0",
+    "date-fns": "^4.1.0",
+    "lucide-vue-next": "^0.456.0",
+    "sass": "^1.80.6",
+    "vue": "^3.3.11",
+    "vuetify": "^3.7.4"
   }
-  
+}

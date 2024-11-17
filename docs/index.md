@@ -9,7 +9,7 @@ hero:
   actions:
     - theme: brand
       text: Get started
-      link: /introduction
+      link: /weweb/introduction
 
 features:
   - title: Setup
