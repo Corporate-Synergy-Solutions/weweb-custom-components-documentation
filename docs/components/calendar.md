@@ -6,7 +6,7 @@ aside: false
 
 Google calendar like component where you can manage your events.
 
-<Calendar :eventData="eventData"/>
+<iframe height="720" width="1024" src="https://stackblitz.com/edit/vitejs-vite-tgg3ua?embed=1&hideExplorer=1&hideNavigation=1&theme=light&view=preview"></iframe>
 
 ## Properties
 
@@ -17,9 +17,9 @@ Google calendar like component where you can manage your events.
 
 ### Object
 
-| name  | type                                                                                                                                                                                | example                                                                                                                                                           |
-| ----- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Event | `id: Text / Number, start: 'yyyy-MM-dd', end: 'yyyy-MM-dd', title: Text, description: Text, calendarId: 'personal' / 'schoool' / 'leisure' / 'work' , participants : Array of Text` | `{id: 1, start: 2024-10-28, end: 2024-10-28, title: this is title, description: this is description, calendarId: work, participants: ['Andre', 'Tony', 'Iqbal']}` |
+| name  | type                                                                                                                                                                                | example                                                                                                                                                          |
+| ----- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Event | `id: Text / Number, start: 'yyyy-MM-dd', end: 'yyyy-MM-dd', title: Text, description: Text, calendarId: 'personal' / 'schoool' / 'leisure' / 'work' , participants : Array of Text` | `{id: 1, start: '2024-10-28', end: '2024-10-28', title: 'this is title', description: 'this is description', calendarId: 'work', participants: ['John', 'Doe']}` |
 
 ## Events
 
@@ -28,43 +28,3 @@ Google calendar like component where you can manage your events.
 | event:create | `Event` | Emmited when event is created |
 | event:update | `Event` | Emmited when event is updated |
 | event:delete | `Event` | Emmited when event is deleted |
-
-<script setup>
-import Calendar from '../vue-components/calendar/Calendar.vue'
-const eventData = [
-  {
-    id: 1,
-    start: '2024-10-28',
-    end: '2024-10-28',
-    title: 'this is title',
-    description: 'this is description',
-    calendarId: 'work',
-    participants: ['Andre', 'Tony', 'Iqbal'],
-  },
-  {
-    id: 2,
-    start: '2024-10-29 08:00',
-    end: '2024-10-29 10:00',
-    title: 'hi again',
-    description: 'this is description again',
-    calendarId: 'school',
-    participants: ['Andre', 'Tony', 'Iqbal'],
-  },
-  {
-    id: 3,
-    start: '2024-10-30 08:00',
-    end: '2024-10-30 10:00',
-    title: 'this is title 2',
-    description: 'this is description 2',
-    calendarId: 'leisure',
-  },
-  {
-    id: 4,
-    start: '2024-10-31 08:00',
-    end: '2024-10-31 10:00',
-    title: 'this is title again 2',
-    description: 'this is description again 2',
-    calendarId: 'personal',
-  },
-]
-</script>
